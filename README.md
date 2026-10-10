@@ -6,8 +6,8 @@ This repository only hosts the launcher **release builds**. No source code is pu
 ## Download
 
 1. Open **Releases** on the right and pick the newest launcher release (`SCR_DB Launcher v…`).
-   - The **Supported map list** release (`maplist`) is not something to download. The launcher fetches that small signed file by
-     itself when you open a map version it does not know yet.
+   - The **Launcher data** release (`launcher-data`) is not something to download. The launcher fetches that small signed file by
+     itself, about once a day and when you open a map version it does not know yet.
 2. Download `SCR_DB_Launcher_<version>.zip` and extract the **whole folder** somewhere like your Desktop or Documents.
    - Do not run the launcher from inside the zip file.
    - Do not put it under `C:\Program Files` (the launcher cannot write save files there).
@@ -17,8 +17,8 @@ This repository only hosts the launcher **release builds**. No source code is pu
    - If Windows shows **"Windows protected your PC"**, click **More info → Run anyway**. The launcher is an unsigned program,
      so Windows shows this warning.
 
-From v1.16.0, a map update usually does not need a new launcher: the launcher checks the signed supported map list online once
-when it sees a new map version. Download a new launcher when its release is announced.
+From v2.0.0, map updates do not need a new launcher: the launcher checks its signed data file online once a day, and right
+away when it sees a new map version. Download a new launcher only when a new launcher release is announced.
 
 ## Updating to a new version
 
