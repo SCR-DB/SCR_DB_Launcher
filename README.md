@@ -1,6 +1,6 @@
 # SCR_DB Launcher
 
-Save launcher for the StarCraft: Remastered custom map **DPS 강화하기 (DPS Enhance)**.
+Offline save launcher for StarCraft: Remastered custom maps that use SCR_DB saves.
 This repository only hosts the launcher **release builds**. No source code is published here.
 
 ## Download
@@ -12,14 +12,10 @@ This repository only hosts the launcher **release builds**. No source code is pu
 3. **Add the launcher folder to your antivirus exclusions.** The launcher reads and writes StarCraft's memory to exchange save
    data, so some antivirus programs flag it by mistake.
 4. Run `SCR_DB_Launcher.exe` from the extracted folder. Leave the other files and folders next to it as they are.
-   - If Windows shows **"Windows protected your PC"**, click **More info → Run anyway**. The launcher is a personal, unsigned
-     program, so Windows shows this warning.
+   - If Windows shows **"Windows protected your PC"**, click **More info → Run anyway**. The launcher is an unsigned program,
+     so Windows shows this warning.
 
-Get the map (.scx) from the **#맵_다운로드** channel on Discord and put it in
-`%userprofile%\Documents\StarCraft\Maps\Download`. Each map version is paired with a launcher version, so when a new map
-comes out, download the matching new launcher too.
-
-Discord: https://discord.gg/axuQfZCZUF
+Each launcher version supports specific map versions. When a map you play is updated, download the newest launcher here as well.
 
 ## Updating to a new version
 
@@ -33,9 +29,9 @@ Discord: https://discord.gg/axuQfZCZUF
 
 Each release lists the SHA256 hash of its files. To check the file you downloaded, run this in PowerShell:
 
-```
+
 Get-FileHash .\SCR_DB_Launcher_<version>.zip -Algorithm SHA256
-```
+
 
 If the result matches the hash in the release notes, the file is intact.
 Only use launchers downloaded from this repository's Releases page.
